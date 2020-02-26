@@ -1,3 +1,12 @@
+status_code () {
+  local color face
+
+  color="%(?.${fg[green]}.${fg[blue]})"
+  face="%(?!(*'~') < !(*;~;%)? < )"
+
+  echo "${color}${face}${reset_color}"
+}
+
 HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S] "
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -9,8 +18,9 @@ alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias diff='diff -u'
 
+setopt prompt_subst
 PROMPT="%U%F{3}${(r:$COLUMNS-3:: :)}%?%u%f
-[%F{6}Cygwin%f %F{3}%c%f]%# "
+[%F{6}Cygwin%f `status_code`%F{3}%c%f]%# "
 
 RPROMPT="%* hist:%U%h%u jobs:%U%j%u"
 
