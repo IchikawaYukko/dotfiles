@@ -1,0 +1,18 @@
+{
+    "graphvizPreview.dotPath": "C:\\cygwin64\\bin\\dot.exe",
+    "git.enableCommitSigning": true,
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\zsh.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "-l"
+    ],
+    "git.alwaysSignOff": true,
+    "terminal.integrated.copyOnSelection": true,
+    "php.validate.executablePath": "c:\\php\\php.exe",
+    "php.executablePath": "c:\\php\\php.exe",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Cobalt Blue",
+    "php.validate.run": "onType",
+    "terminal.integrated.confirmOnExit": true,
+    "files.autoGuessEncoding": true
+}
