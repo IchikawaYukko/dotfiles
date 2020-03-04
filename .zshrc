@@ -2,9 +2,14 @@ status_code () {
   local color face
 
   color="%(?.${fg[green]}.${fg[blue]})"
-  face="%(?!(*'~') < !(*;~;%)? < )"
+  face="%(?!(*'~') < !(*T~T%)? < )"
 
   echo "${color}${face}${reset_color}"
+}
+
+# SSH Completion
+function _ssh {
+  compadd `fgrep 'Host ' ~/.ssh/config | awk '{print $2}' | sort`;
 }
 
 HISTTIMEFORMAT="[%Y/%M/%D %H:%M:%S] "
@@ -17,6 +22,7 @@ alias rm='rm -i'
 alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias diff='diff -u'
+alias "gitlog"="git log --graph --oneline --decorate"
 
 setopt prompt_subst
 PROMPT="%U%F{3}${(r:$COLUMNS-3:: :)}%?%u%f
