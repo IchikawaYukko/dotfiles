@@ -4,7 +4,7 @@
     "editor.renderWhitespace": "all",
     "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\zsh.exe",
     "terminal.integrated.shellArgs.windows": [
-        "-l"
+        "--login",
     ],
     "git.alwaysSignOff": true,
     "terminal.integrated.copyOnSelection": true,
@@ -14,5 +14,8 @@
     "workbench.colorTheme": "Cobalt Blue",
     "php.validate.run": "onType",
     "terminal.integrated.confirmOnExit": true,
-    "files.autoGuessEncoding": true
+    "files.autoGuessEncoding": true,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#000020"
+    },
 }
