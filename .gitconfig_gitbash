@@ -1,0 +1,9 @@
+[user]
+        email = ichikawayuriko@yahoo.co.jp
+        signingkey = 7D57387E
+	name = 市川ゆり子/IchikawaYuriko
+
+[gpg]
+	program = gpg
+[commit]
+        gpgsign = true

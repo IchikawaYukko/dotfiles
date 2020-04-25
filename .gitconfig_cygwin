@@ -1,0 +1,9 @@
+[user]
+	user = 市川ゆり子/IchikawaYuriko
+	email = ichikawayuriko@yahoo.co.jp
+	signingkey = 7D57387E
+
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
