@@ -81,3 +81,10 @@ compinit
 setopt notify
 setopt menu_complete
 bindkey -e
+
+# Proxy
+HTTP_PROXY=http://10.254.254.37:8080
+HTTPS_PROXY=http://10.254.254.37:8080
+NO_PROXY=localhost
+
+export HTTP_PROXY HTTPS_PROXY NO_PROXY
