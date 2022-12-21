@@ -1,0 +1,7 @@
+[auth]
+[helpers]
+[tunnels]
+[miscellany]
+global-ignores = .gitignore .git .vscode
+[auto-props]
+[working-copy]

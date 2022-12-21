@@ -1,0 +1,16 @@
+[http]
+	proxy = http://10.254.254.37:8080
+	sslVerify = false
+[https]
+	proxy = https://10.254.254.37:8080
+[user]
+	signingkey = 64F976EE9A2E1152508D8BCAE1AA0D98409ED2FD
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = false
+	filemode = true
+[gpg]
+	program = gpg2
+[pull]
+	rebase = false
